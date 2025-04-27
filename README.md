@@ -1,5 +1,5 @@
-<h1 align="center">Next.js + Notion — Wailtist Template</h1>
-
+<h1 align="center">Next.js + Notion — Waitlist Template</h1>
+<h2 align="center">Saynètes</h2>
 <p align="center">
 
 <img src ="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white">
