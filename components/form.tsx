@@ -33,7 +33,7 @@ export default function Form({
       <motion.div variants={itemVariants}>
         <Input
           type="text"
-          placeholder="Your Name"
+          placeholder="Votre nom"
           value={name}
           onChange={handleNameChange}
         />
@@ -41,7 +41,7 @@ export default function Form({
       <motion.div variants={itemVariants}>
         <Input
           type="email"
-          placeholder="Your Email Address"
+          placeholder="Votre email"
           value={email}
           onChange={handleEmailChange}
         />
@@ -54,20 +54,20 @@ export default function Form({
           iconPlacement="right"
           className="mt-2 w-full"
           disabled={loading}>
-          {loading ? "Loading..." : "Join Waitlist!"}
+          {loading ? "Chargement en cours..." : "C'est parti!"}
         </EnhancedButton>
       </motion.div>
       <motion.div
         variants={itemVariants}
         className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
-        <p>For any queries, reach out at </p>
+        <p>Pour plus d'infos </p>
         <Link
           href="https://x.com/blakssh"
           rel="noopener noreferrer"
           target="_blank">
           <FaXTwitter className="h-4 w-4 transition-all duration-200 ease-linear hover:text-yellow-200" />
         </Link>
-        or
+        ou
         <Link
           href="https://github.com/lakshaybhushan"
           rel="noopener noreferrer"

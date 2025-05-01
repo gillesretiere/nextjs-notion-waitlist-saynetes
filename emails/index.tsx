@@ -13,50 +13,46 @@ import * as React from "react";
 interface EmailProps {
   userFirstname: string;
 }
-
+// logo_hmrt_transparent.svg
 export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
   <Html>
     <Head />
-    <Preview>Thanks for Joining the Waitlist, {userFirstname}! 🎉</Preview>
+    <Preview>Merci de votre intérêt pour les saynètes, {userFirstname}! 🎉</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`https://nextjs-notion-waitlist.vercel.app/waitlist-logo.png`}
+          src={`https://hammer-marteau.com/assets/hmrt_logo_red.png`}
           width="220"
-          height="100"
+          height="220"
           alt="Notion Waitlist Logo"
           style={logo}
         />
         <Text style={greeting}>Hi {userFirstname},</Text>
         <Text style={paragraph}>
-          Thanks for joining the waitlist for our Next.js + Notion CMS waitlist
-          template! I'm Lakshay, the developer behind this project. I'm glad to
-          have you on board.
+          Merci d'avoir répondu à notre invitation! Je suis heureux de vous inviter à découvrir les Saynètes "Le diabète".
         </Text>
         <Text style={paragraph}>
-          I'll keep you posted on the progress and notify you as soon as it's
-          ready for you to use. In the meantime, if you have any questions or
-          feedback, don't hesitate to reach out by replying directly to{" "}
-          <a href="mailto:lakshb.work@gmail.com" style={link}>
-            this email {""}
+          Pour tous renseignements complémentaires concernant les saynètes, veuillez contacter en envoyant un mail à l'adresse suivante {" "}
+          <a href="mailto:gilles.retiere@gmail.com" style={link}>
+            cet email {""}
           </a>
-          — I'm here to listen!
+          — Nous sommes à votre disposition!
         </Text>
         <Text style={paragraph}>
-          You can also follow me on X/Twitter for updates:{" "}
-          <a href="https://x.com/blakssh" style={link}>
-            @blakssh
+          Pour découvrir les saynètes, veuillez cliquer sur ce lien :{" "}
+          <a href="https://saynetes.fr" style={link}>
+            Vers les Saynètes
           </a>
         </Text>
         <Text style={signOff}>
-          Best regards,
+          Cordialement,
           <br />
-          Lakshay
+          Gilles
         </Text>
         <Hr style={hr} />
         <Text style={footer}>
-          You received this email because you signed up for the Notion waitlist.
-          If you believe this is a mistake, feel free to ignore this email.
+          Vous avez reçu cet email car vous avez répondu à l'invitation d'un précédent email.
+          Si vous estimez qu'il s'agit d'une erreur, veuillez ignorer ce message.
         </Text>
       </Container>
     </Body>
