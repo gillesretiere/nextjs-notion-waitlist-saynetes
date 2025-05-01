@@ -8,7 +8,6 @@ import { Redis } from "@upstash/redis";
 import { Ratelimit } from "@upstash/ratelimit";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-
 const redis = new Redis({
   url: process.env.UPSTASH_REDIS_REST_URL,
   token: process.env.UPSTASH_REDIS_REST_TOKEN,
@@ -21,6 +20,7 @@ const ratelimit = new Ratelimit({
 });
 
 export async function POST(request: NextRequest, response: NextResponse) {
+
   const ip = request.ip ?? "127.0.0.1";
 
   const result = await ratelimit.limit(ip);
@@ -39,10 +39,10 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const { email, firstname } = await request.json();
 
   const { data, error } = await resend.emails.send({
-    from: "Lakshay<hello@waitlist.lakshb.dev>",
+    from: "Gilles<gre@hammer-marteau.com>",
     to: [email],
     subject: "Thankyou for wailisting the Next.js + Notion CMS template!",
-    reply_to: "lakshb.work@gmail.com",
+    reply_to: "gilles.retiere@gmail.com",
     html:  await render(WelcomeTemplate({ userFirstname: firstname })),
   });
 
