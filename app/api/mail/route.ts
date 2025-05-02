@@ -39,10 +39,10 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const { email, firstname } = await request.json();
 
   const { data, error } = await resend.emails.send({
-    from: "Gilles<gre@hammer-marteau.com>",
+    from: "L'équipe Saynètes<updates@hammer-marteau.com>",
     to: [email],
-    subject: "Thankyou for wailisting the Next.js + Notion CMS template!",
-    reply_to: "gilles.retiere@gmail.com",
+    subject: "Votre lien pour découvrir les Saynètes!",
+    reply_to: "contact@hammer-marteau.com",
     html:  await render(WelcomeTemplate({ userFirstname: firstname })),
   });
 

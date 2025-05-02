@@ -27,21 +27,21 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
           alt="Saynetes Logo"
           style={logo}
         />
-        <Text style={greeting}>Hi {userFirstname},</Text>
+        <Text style={greeting}>Bonjour {userFirstname},</Text>
         <Text style={paragraph}>
           Merci d'avoir répondu à notre invitation! L'équipe est heureuse de vous inviter à découvrir la première saynète, sur le thème du diabète".
         </Text>
         <Text style={paragraph}>
           Pour tous renseignements complémentaires concernant le projet des saynètes, veuillez contacter l'ASAMLA en envoyant un mail à l'adresse suivante {" "}
           <a href="mailto:gilles.retiere@gmail.com" style={link}>
-            cet email {""}
+            contact ASAMLA {""}
           </a>
           — Nous sommes à votre disposition!
         </Text>
         <Text style={paragraph}>
           Pour découvrir les saynètes, veuillez cliquer sur ce lien :{" "}
           <a href="https://saynetes.fr" style={link}>
-            Vers les Saynètes
+            www.saynetes.fr
           </a>
         </Text>
         <Text style={signOff}>
@@ -51,7 +51,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         </Text>
         <Hr style={hr} />
         <Text style={footer}>
-          Vous avez reçu cet email car vous avez répondu à l'invitation d'un précédent email.
+          Vous avez reçu cet email car vous avez répondu à une invitation de l'ASAMLA.
           Si vous estimez qu'il s'agit d'une erreur, veuillez ignorer ce message.
         </Text>
       </Container>
