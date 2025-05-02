@@ -22,17 +22,17 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
       <Container style={container}>
         <Img
           src={`https://hammer-marteau.com/assets/hmrt_logo_red.png`}
-          width="220"
-          height="220"
-          alt="Notion Waitlist Logo"
+          width="110"
+          height="110"
+          alt="Saynetes Logo"
           style={logo}
         />
         <Text style={greeting}>Hi {userFirstname},</Text>
         <Text style={paragraph}>
-          Merci d'avoir répondu à notre invitation! Je suis heureux de vous inviter à découvrir les Saynètes "Le diabète".
+          Merci d'avoir répondu à notre invitation! L'équipe est heureuse de vous inviter à découvrir la première saynète, sur le thème du diabète".
         </Text>
         <Text style={paragraph}>
-          Pour tous renseignements complémentaires concernant les saynètes, veuillez contacter en envoyant un mail à l'adresse suivante {" "}
+          Pour tous renseignements complémentaires concernant le projet des saynètes, veuillez contacter l'ASAMLA en envoyant un mail à l'adresse suivante {" "}
           <a href="mailto:gilles.retiere@gmail.com" style={link}>
             cet email {""}
           </a>
@@ -47,7 +47,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         <Text style={signOff}>
           Cordialement,
           <br />
-          Gilles
+          Team Saynètes
         </Text>
         <Hr style={hr} />
         <Text style={footer}>
