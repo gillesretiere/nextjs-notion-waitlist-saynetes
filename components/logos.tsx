@@ -7,7 +7,7 @@ import TextBlur from "./ui/text-blur";
 const logos = [
   { href: "https://nextjs.org", src: "/asamla_logo_white.png", alt: "Next.js Logo" },
   { href: "https://notion.so", src: "/logo_dac.png", alt: "Notion Logo" },
-  { href: "https://resend.com", src: "/logo_hmrt.svg", alt: "Resend Logo" },
+  { href: "https://resend.com", src: "/logo_hmrt_tr_white.png", alt: "Resend Logo" },
 ];
 
 export default function Logos() {
@@ -18,17 +18,18 @@ export default function Logos() {
       initial="hidden"
       animate="visible">
       <motion.div variants={itemVariants}>
-        <TextBlur
-          className="text-center text-2xl font-medium tracking-tight text-zinc-200 md:text-3xl"
-          text="Powered by"
+      <TextBlur
+          className="text-center text-base text-zinc-300 sm:text-lg"
+          text="Un projet d’éducation thérapeutique multilingue"
+          duration={0.8}
         />
+
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <TextBlur
-          className="text-center text-base text-zinc-300 sm:text-lg"
-          text="Simple and powerful tools that help you build faster"
-          duration={0.8}
+      <TextBlur
+          className="text-center text-2xl font-medium tracking-tight text-zinc-200 md:text-3xl"
+          text="Une coproduction TEAM SAYNÈTES"
         />
       </motion.div>
 

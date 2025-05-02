@@ -54,7 +54,7 @@ export default function Form({
           iconPlacement="right"
           className="mt-2 w-full"
           disabled={loading}>
-          {loading ? "Chargement en cours..." : "C'est parti!"}
+          {loading ? "C'est parti..." : "Je m'inscris!"}
         </EnhancedButton>
       </motion.div>
       <motion.div

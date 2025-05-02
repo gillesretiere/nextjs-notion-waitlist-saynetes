@@ -9,8 +9,11 @@ export default function Footer() {
       initial="hidden"
       animate="visible"
       className="mt-auto flex w-full items-center justify-center gap-1 border-t bg-background p-6 text-muted-foreground md:justify-start">
+        
       <motion.div variants={itemVariants}>
+        
         Conception et réalisation du site par {" "}
+
         <Link
           href="https://lakshb.dev"
           rel="noopener noreferrer"
@@ -19,7 +22,14 @@ export default function Footer() {
             Hammer & Marteau
           </span>
           .
+          <motion.img
+            src="/logo_hmrt_red.png"
+            alt="logo"
+            className="h-6 inline"
+            variants={itemVariants}
+          />
         </Link>
+
       </motion.div>
     </motion.div>
   );
