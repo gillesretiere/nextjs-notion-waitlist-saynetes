@@ -21,8 +21,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`https://hammer-marteau.com/assets/hmrt_logo_red.png`}
-          width="110"
+          src={`https://hammer-marteau.com/assets/team_saynetes-small.png`}
           height="110"
           alt="Saynetes Logo"
           style={logo}
@@ -54,6 +53,15 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
           Vous avez reçu cet email car vous avez répondu à une invitation de l'ASAMLA.
           Si vous estimez qu'il s'agit d'une erreur, veuillez ignorer ce message.
         </Text>
+        <Text style={footer}>
+          Conception et réalisation du site par Hammer & Marteau
+        </Text>
+        <Img
+          src={`https://hammer-marteau.com/assets/hmrt_logo_red.png`}
+          height="30"
+          alt="Logo Hammer & Marteau"
+          style={logo}
+        />
       </Container>
     </Body>
   </Html>
@@ -66,16 +74,17 @@ NotionWaitlistEmail.PreviewProps = {
 export default NotionWaitlistEmail;
 
 const main = {
-  background: "linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%)",
+  // background: "linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%)",
+  background: "#CCD9CE",
   fontFamily: 'figtree, "Helvetica Neue", Helvetica, Arial, sans-serif',
   padding: "40px 0",
-  color: "#cccccc",
+  color: "#0A1827",
 };
 
 const container = {
   margin: "0 auto",
   padding: "24px 32px 48px",
-  backgroundColor: "#1a1a1a",
+  backgroundColor: "#F2F2F2",
   borderRadius: "12px",
   boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
   maxWidth: "600px",
@@ -98,7 +107,7 @@ const paragraph = {
 };
 
 const link = {
-  color: "#F7FF9B",
+  color: "#5B9496",
   textDecoration: "underline",
 };
 
