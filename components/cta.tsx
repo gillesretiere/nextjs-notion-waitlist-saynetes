@@ -23,7 +23,7 @@ export default function CTA() {
       <motion.img
         src="/team_saynetes.png"
         alt="logo"
-        className="mx-auto h-48"
+        className="mx-auto w-96"
         variants={itemVariants}
       />
 
