@@ -19,7 +19,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           target="_blank">
           <span className="text-zinc-300 underline underline-offset-2 transition-all duration-200 ease-linear hover:text-yellow-200">
-            Hammer & Marteau
+            Hammer &amp; Marteau
           </span>
           .
           <motion.img
