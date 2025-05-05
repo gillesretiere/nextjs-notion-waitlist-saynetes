@@ -33,7 +33,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         <Text style={paragraph}>
           Pour tous renseignements complémentaires concernant le projet des saynètes, veuillez contacter l'ASAMLA en envoyant un mail à l'adresse suivante {" "}
           <a href="mailto:gilles.retiere@gmail.com" style={link}>
-            contact ASAMLA {""}
+            Coordination ASAMLA {""}
           </a>
           — Nous sommes à votre disposition!
         </Text>

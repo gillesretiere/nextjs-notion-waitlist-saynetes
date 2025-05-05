@@ -23,7 +23,7 @@ export default function Footer() {
           </span>
           .
           <motion.img
-            src="/logo_hmrt_red.png"
+            src="/logo_hmrt.svg"
             alt="logo"
             className="h-6 inline"
             variants={itemVariants}

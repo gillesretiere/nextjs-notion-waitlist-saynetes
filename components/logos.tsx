@@ -5,9 +5,9 @@ import { containerVariants, itemVariants } from "@/lib/animation-variants";
 import TextBlur from "./ui/text-blur";
 
 const logos = [
-  { href: "https://nextjs.org", src: "/asamla_logo_white.png", alt: "Next.js Logo" },
-  { href: "https://notion.so", src: "/logo_dac.png", alt: "Notion Logo" },
-  { href: "https://resend.com", src: "/logo_hmrt_tr_white.png", alt: "Resend Logo" },
+  { href: "https://nextjs.org", src: "/asamla_logo_white.png", alt: "Logo ASAMLA" },
+  { href: "#null", src: "/logo_dac.png", alt: "Logo DAC" },
+  { href: "https://resend.com", src: "/votre-logo-ici.svg", alt: "Logo Partenaire" },
 ];
 
 export default function Logos() {
