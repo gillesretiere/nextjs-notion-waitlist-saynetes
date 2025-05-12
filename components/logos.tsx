@@ -5,9 +5,9 @@ import { containerVariants, itemVariants } from "@/lib/animation-variants";
 import TextBlur from "./ui/text-blur";
 
 const logos = [
-  { href: "https://nextjs.org", src: "/asamla_logo_white.png", alt: "Logo ASAMLA" },
-  { href: "#null", src: "/logo_dac.png", alt: "Logo DAC" },
-  { href: "https://resend.com", src: "/votre-logo-ici.svg", alt: "Logo Partenaire" },
+  { href: "https://asamla.org", src: "/asamla_logo_white.png", alt: "Logo ASAMLA" },
+  { href: "https://www.dac44.fr", src: "/logo_dac.png", alt: "Logo DAC" },
+  { href: "https://hammer-marteau.com", src: "/votre-logo-ici.svg", alt: "Logo Partenaire" },
 ];
 
 export default function Logos() {
@@ -29,7 +29,7 @@ export default function Logos() {
       <motion.div variants={itemVariants}>
       <TextBlur
           className="text-center text-2xl font-medium tracking-tight text-zinc-200 md:text-3xl"
-          text="Une coproduction TEAM SAYNÈTES"
+          text="Une coproduction ASAMLA + DAC44"
         />
       </motion.div>
 

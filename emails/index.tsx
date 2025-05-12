@@ -28,11 +28,11 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         />
         <Text style={greeting}>Bonjour {userFirstname},</Text>
         <Text style={paragraph}>
-          Merci d'avoir répondu à notre invitation! L'équipe est heureuse de vous inviter à découvrir la première saynète, sur le thème du diabète".
+          Merci d'avoir répondu à notre invitation! L'équipe est heureuse de vous inviter à découvrir la première saynète, sur le thème du diabète.
         </Text>
         <Text style={paragraph}>
           Pour tous renseignements complémentaires concernant le projet des saynètes, veuillez contacter l'ASAMLA en envoyant un mail à l'adresse suivante {" "}
-          <a href="mailto:gilles.retiere@gmail.com" style={link}>
+          <a href="mailto:coordination@asamla.org" style={link}>
             Coordination ASAMLA {""}
           </a>
           — Nous sommes à votre disposition!
@@ -46,22 +46,19 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         <Text style={signOff}>
           Cordialement,
           <br />
-          Team Saynètes
+          L'équipe Saynètes
         </Text>
         <Hr style={hr} />
         <Text style={footer}>
           Vous avez reçu cet email car vous avez répondu à une invitation de l'ASAMLA.
           Si vous estimez qu'il s'agit d'une erreur, veuillez ignorer ce message.
         </Text>
-        <Text style={footer}>
-          Conception et réalisation du site par Hammer & Marteau
+        <Text style={signature} className="text-xs">
+          ASAMLA, 5 place Anatole France, 44000 Nantes<br />
+          <a href="mailto:coordination@asamla.org" style={link}>
+            coordination@asamla.org {""}
+          </a>
         </Text>
-        <Img
-          src={`https://hammer-marteau.com/assets/hmrt_logo_red.png`}
-          height="30"
-          alt="Logo Hammer & Marteau"
-          style={logo}
-        />
       </Container>
     </Body>
   </Html>
@@ -124,5 +121,10 @@ const hr = {
 
 const footer = {
   color: "#8c8c8c",
+  fontSize: "12px",
+};
+
+const signature = {
+  color: "#808080",
   fontSize: "12px",
 };

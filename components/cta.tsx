@@ -14,7 +14,7 @@ export default function CTA() {
         <div className="flex items-center justify-center">
           <div className="flex w-fit items-center justify-center rounded-full bg-muted/80 text-center">
             <AnimatedShinyText className="px-4 py-1">
-              <span>Prochainement!</span>
+              <span>Nouveau!</span>
             </AnimatedShinyText>
           </div>
         </div>
@@ -23,7 +23,7 @@ export default function CTA() {
       <motion.img
         src="/team_saynetes.png"
         alt="logo"
-        className="mx-auto w-96"
+        className="mx-auto w-full"
         variants={itemVariants}
       />
 
