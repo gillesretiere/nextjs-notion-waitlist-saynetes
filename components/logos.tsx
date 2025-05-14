@@ -7,7 +7,6 @@ import TextBlur from "./ui/text-blur";
 const logos = [
   { href: "https://asamla.org", src: "/asamla_logo_white.png", alt: "Logo ASAMLA" },
   { href: "https://www.dac44.fr", src: "/logo_dac.png", alt: "Logo DAC" },
-  { href: "https://hammer-marteau.com", src: "/votre-logo-ici.svg", alt: "Logo Partenaire" },
 ];
 
 export default function Logos() {
@@ -35,7 +34,7 @@ export default function Logos() {
 
       <motion.div
         variants={itemVariants}
-        className="mt-4 grid w-full grid-cols-2 items-center justify-center gap-4 md:mt-6 md:grid-cols-3 md:gap-6">
+        className="mt-4 grid w-full grid-cols-2 items-center justify-center gap-4 md:mt-6 md:gap-6">
         {logos.map((logo, index) => (
           <Link
             key={index}
