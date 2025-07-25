@@ -9,7 +9,7 @@ const FigtreeFont = Figtree({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Invitation Lancement Saynètes",
   description:
-    "Page d'inscription / invitation pour le lancement de l'application Saynètes Diabète.",
+    "Page d'inscription pour découvrir l'application Saynètes Diabète.",
 };
 
 export default function RootLayout({

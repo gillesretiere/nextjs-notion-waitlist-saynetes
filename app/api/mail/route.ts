@@ -41,7 +41,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const { data, error } = await resend.emails.send({
     from: "L'équipe Saynètes<updates@hammer-marteau.com>",
     to: [email],
-    subject: "Votre lien pour découvrir les Saynètes!",
+    subject: "Voici votre lien pour découvrir les Saynètes!",
     reply_to: "contact@hammer-marteau.com",
     html:  await render(WelcomeTemplate({ userFirstname: firstname })),
   });
